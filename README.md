@@ -1,5 +1,27 @@
 # K-Means & PCA
 
+## Introduction
+
+Clustering is an unsupervised machine learning algorithm and it recognizes patterns without specific labels and clusters the data according to the features. In our case, we will see if a clustering algorithm (k-means) can find a pattern between different images of the apparel in f-MNIST without the labels (y).
+
+![alt-text](https://github.com/rajeshidumalla/K-Means-PCA-the-Breast-Cancer-Wisconsin-dataset/blob/main/1213.gif)
+
+
+A gif illustrating how K-means works. Each red dot is a centroid and each different color represents a different cluster. Every frame is an iteration where the centroid is relocated. (Source: gyfcat)
+
+K-means clustering works by assigning a number of centroids based on the number of clusters given. Each data point is assigned to the cluster whose centroid is nearest to it. The algorithm aims to minimize the squared Euclidean distances between the observation and the centroid of cluster to which it belongs.
+
+Principal Component Analysis or PCA is a method of reducing the dimensions of the given dataset while still retaining most of its variance. Wikipedia defines it as, “PCA is defined as an orthogonal linear transformation that transforms the data to a new coordinate system such that the greatest variance by some scalar projection of the data comes to lie on the first coordinate (called the first principal component), the second greatest variance on the second coordinate, and so on.
+
+
+![alt-text](https://github.com/rajeshidumalla/K-Means-PCA-the-Breast-Cancer-Wisconsin-dataset/blob/main/45654.gif)
+
+PCA visualisation. The best PC (black moving line) is when the total length of those red lines are minimum. It will be used instead of the horizontal and vertical components (Source: giphy )
+
+Basically PCA reduces the dimensions of the dataset while conserving most of the information. For e.g. if a data-set has 500 features, it gets reduced to 200 features depending on the specified amount of variance retained. Higher the variance retained,more information is conserved, but more the resulting dimensions will be.
+
+Less dimensions means less time to train and test the model. In some cases models which use data-set with PCA perform better than the original dataset. The concept of PCA and the changes it causes on images by changing the retained variance is shown brilliantly [here](https://towardsdatascience.com/pca-using-python-scikit-learn-e653f8989e60).
+
 ### Setup
 
 Let's setup Spark on Colab environment.  Run the cell below!
