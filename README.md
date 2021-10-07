@@ -24,7 +24,7 @@ Less dimensions means less time to train and test the model. In some cases model
 
 ### Setup
 
-Let's setup Spark on Colab environment.  Run the cell below!
+Let's setup Spark environment.  Run the cell below!
 
 
 ```python
@@ -77,7 +77,7 @@ sc = pyspark.SparkContext(conf=conf)
 spark = SparkSession.builder.getOrCreate()
 ```
 
-I can easily check the current version and get the link of the web interface. In the Spark UI, I can monitor the progress of my job and debug the performance bottlenecks (if my Colab is running with a **local runtime**).
+I can easily check the current version and get the link of the web interface. In the Spark UI, I can monitor the progress of my job and debug the performance bottlenecks.
 
 
 ```python
@@ -100,39 +100,9 @@ pyspark-shell
 ```
 
 
-
-
-If I run this on the Google colab hosted runtime, the cell below will create a *ngrok* tunnel which will allow me to still check the Spark UI.
-
-
-```python
-!wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-!unzip ngrok-stable-linux-amd64.zip
-get_ipython().system_raw('./ngrok http 4050 &')
-!curl -s http://localhost:4040/api/tunnels | python3 -c \
-    "import sys, json; print(json.load(sys.stdin)['tunnels'][0]['public_url'])"
-```
-
-    --2021-10-06 00:43:26--  https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-    Resolving bin.equinox.io (bin.equinox.io)... 52.202.168.65, 54.237.133.81, 18.205.222.128, ...
-    Connecting to bin.equinox.io (bin.equinox.io)|52.202.168.65|:443... connected.
-    HTTP request sent, awaiting response... 200 OK
-    Length: 13832437 (13M) [application/octet-stream]
-    Saving to: ‘ngrok-stable-linux-amd64.zip.2’
-    
-    ngrok-stable-linux- 100%[===================>]  13.19M  50.3MB/s    in 0.3s    
-    
-    2021-10-06 00:43:26 (50.3 MB/s) - ‘ngrok-stable-linux-amd64.zip.2’ saved [13832437/13832437]
-    
-    Archive:  ngrok-stable-linux-amd64.zip
-    replace ngrok? [y]es, [n]o, [A]ll, [N]one, [r]ename: yes
-      inflating: ngrok                   
-    https://c7fb-35-190-173-94.ngrok.io
-
-
 ### Data Preprocessing
 
-In this Notebook, rather than downloading a file from some where, I will load a famous machine learning dataset, the [Breast Cancer Wisconsin dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_breast_cancer.html), using the ```scikit-learn``` datasets loader.
+In this Notebook, rather than downloading a file from some where, I am using a famous machine learning dataset, the [Breast Cancer Wisconsin dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_breast_cancer.html), using the ```scikit-learn``` datasets loader.
 
 
 ```python
