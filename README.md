@@ -22,7 +22,7 @@ Basically PCA reduces the dimensions of the dataset while conserving most of the
 
 Less dimensions means less time to train and test the model. In some cases models which use data-set with PCA perform better than the original dataset. The concept of PCA and the changes it causes on images by changing the retained variance is shown brilliantly [here](https://towardsdatascience.com/pca-using-python-scikit-learn-e653f8989e60).
 
-### Setup
+## Setup
 
 Let's setup Spark environment.  Run the cell below!
 
