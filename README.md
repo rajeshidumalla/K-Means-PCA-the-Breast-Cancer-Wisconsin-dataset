@@ -7,7 +7,7 @@ Clustering is an unsupervised machine learning algorithm and it recognizes patte
 ![alt-text](https://github.com/rajeshidumalla/K-Means-PCA-the-Breast-Cancer-Wisconsin-dataset/blob/main/1213.gif)
 
 
-A gif illustrating how K-means works. Each red dot is a centroid and each different color represents a different cluster. Every frame is an iteration where the centroid is relocated. (Source: gyfcat)
+A gif illustrating how K-means works. Each red dot is a centroid and each different color represents a different cluster. Every frame is an iteration where the centroid is relocated.
 
 K-means clustering works by assigning a number of centroids based on the number of clusters given. Each data point is assigned to the cluster whose centroid is nearest to it. The algorithm aims to minimize the squared Euclidean distances between the observation and the centroid of cluster to which it belongs.
 
@@ -16,7 +16,7 @@ Principal Component Analysis or PCA is a method of reducing the dimensions of th
 
 ![alt-text](https://github.com/rajeshidumalla/K-Means-PCA-the-Breast-Cancer-Wisconsin-dataset/blob/main/45654.gif)
 
-PCA visualisation. The best PC (black moving line) is when the total length of those red lines are minimum. It will be used instead of the horizontal and vertical components (Source: giphy )
+PCA visualisation. The best PC (black moving line) is when the total length of those red lines are minimum. It will be used instead of the horizontal and vertical components.
 
 Basically PCA reduces the dimensions of the dataset while conserving most of the information. For e.g. if a data-set has 500 features, it gets reduced to 200 features depending on the specified amount of variance retained. Higher the variance retained,more information is conserved, but more the resulting dimensions will be.
 
