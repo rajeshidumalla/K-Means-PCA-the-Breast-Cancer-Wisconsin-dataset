@@ -65,26 +65,17 @@ spark
 
 
 
+```python
+   SparkSession - in-memory
+```
 
-    <div>
-        <p><b>SparkSession - in-memory</b></p>
-
-<div>
-    <p><b>SparkContext</b></p>
-
-    <p><a href="http://a1a933967aa2:4050">Spark UI</a></p>
-
-    <dl>
-      <dt>Version</dt>
-        <dd><code>v3.1.2</code></dd>
-      <dt>Master</dt>
-        <dd><code>local[*]</code></dd>
-      <dt>AppName</dt>
-        <dd><code>pyspark-shell</code></dd>
-    </dl>
-</div>
-
-    </div>
+```python
+SparkContext
+ Spark UI
+v3.1.2
+local
+pyspark-shell
+```
 
 
 
@@ -139,19 +130,6 @@ pd_df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
